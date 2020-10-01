@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+<link rel=stylesheet href="loginforms.css" >
+<script type="text/javascript">
+function btn(){
+    var fill1=document.getElementById("user");
+    var fill2=document.getElementById("pass");
+    if(fill1.value.trim()=="" || fill2.value.trim()==""){
+        alert("Fields are supposed to be blank");
+        return false;
+    }
+    else if(fill2.value.trim().length<6){
+        fill2.style.border="2px solid red";
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+</script>
+</head>
+<body>
+<form action="../nav1/navigation.html" onsubmit="return btn()">
+<div class="he">
+<h1 >WELCOME</h1>
+</div>
+<div class="loginbox">
+<h1 class="log">Login</h1>
+<i class="fa fa-user" aria-hidden="true"></i>
+<input id="user" type="text" placeholder="Username"><br>
+<i class="fa fa-lock" aria-hidden="true"></i>
+<input type="password" id="pass" title="password must be 6 or more characters long!" placeholder="Password"><br>
+<button onclick="btn()" id="button">Sign in</button>
+</div>
+</div>
+
+</form>
+</body>
+</html>
