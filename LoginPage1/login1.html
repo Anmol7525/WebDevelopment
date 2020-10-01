@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="login1.css">
+<script type="text/javascript">
+function btn(){
+    var vtr=document.getElementById("user");
+    var vtr2=document.getElementById("pass");
+    if(vtr.value.trim()=="" || vtr2.value.trim()==""){
+        alert("please fill the required fields first!");
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+</script>
+</head>
+<body>
+<h1 class="he">WELCOME</h1>
+<div class="loginbox">
+<h1>Login</h1>
+<form action="welcome.html" onsubmit=" return btn()">
+<i class="fa fa-user" aria-hidden="true"></i>
+<input type="text" id="user" placeholder="Username"><br>
+<i class="fa fa-lock" aria-hidden="true"></i>
+<input type="password" id="pass" placeholder="Password"><br>
+<button onclick="btn()" id="btn1" type="submit">sign in</button>
+</form>
+</div>
+</body>
+</html>

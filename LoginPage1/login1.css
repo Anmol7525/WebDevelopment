@@ -1,0 +1,53 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+	background:url(eiffel.jpg) no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center center;
+	font-family:sans-serif;
+}
+.loginbox{
+	color:white;
+	margin-top:70px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	border:1px solid white;
+	width:250px;
+	height:270px;
+	padding:10px;
+	box-shadow:inset 0px 0px 10px white;
+}
+h1{
+	color:white;
+	margin-bottom:40px;
+	text-decoration:underline;
+	
+}
+#user,#pass{
+	width:90%;
+	margin-bottom:35px;
+	padding:3px;
+	font-size:18px;
+	border-bottom:1px solid white;
+}
+input,button{
+	background:none;
+	outline:none;
+	border:none;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+}
+#btn1{
+	width:100%;
+	border:2px solid white;
+	cursor:pointer;
+	padding:5px;
+}
+.he{
+	text-align:center;
+	margin-top:70px;
+	font-size:50px;
+}
