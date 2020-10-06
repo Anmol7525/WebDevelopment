@@ -1,0 +1,366 @@
+*{
+    font-family: 'Slabo 27px', serif;
+    box-sizing: border-box;
+    margin:0px;
+}
+body{
+    padding:0px;
+    margin:0px;
+    font-weight: 600;
+    background: #f1f5f8;
+}
+header{
+    background:linear-gradient(60deg,white,skyblue);
+    position:fixed;
+    width:100%;
+    text-align:left;
+    z-index: 1;
+}
+.logo{
+    margin:10px;
+    margin-left:10px;
+    color:rgb(39,112,191);
+}
+.nav-toggle{
+    display:none;
+}
+nav{
+    position: absolute;
+    top:100%;
+    right:0;
+    text-align:right;
+    background:linear-gradient(60deg,white,skyblue);
+    width:100%;
+    display:none;
+}
+nav ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+nav li{
+    margin-right:20px;
+    margin-bottom:20px;
+}
+nav a{
+    text-decoration: none;
+    font-size:19px;
+    color:#5b5b5c;
+    text-transform:capitalize;
+}
+nav a:hover{
+    color:rgb(59, 84, 110);;
+}
+.nav-toggle:checked ~ nav{
+    display:block;
+}
+.burger{
+    position: absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+}
+.burger div{
+    background: rgb(39,112,191);
+    width:20px;
+    height:3px;
+    margin:3px;
+}
+@media screen and (min-width:900px){
+    .burger{
+        display:none;
+    }
+    header{
+        display:grid;
+        grid-template:1fr auto minmax(600px,1fr);
+    }
+    nav{
+        all:unset;
+        margin-left:40px;
+        grid-column: 3/3;
+        margin-top:20px;
+    }
+    nav ul{
+        display:flex;
+    }
+    nav a{
+        padding:20px 7px;
+    }
+}
+@media screen and (min-width:1024px){
+    nav a{
+      padding:10px;
+    }
+}
+/* the image  part......*/
+.tps{
+    background: rgb(39,112,191);
+    height:500px;
+}
+.img{
+    background:url("ex.png");
+    height: 567px;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.imgc h1{
+    position: absolute;
+    top:140px;
+    left:50px;
+    color:white;
+}
+.imgc p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    font-weight:lighter;
+    letter-spacing: 1px;
+    color:#8ac1fc;
+    position: absolute;
+    top:187px;
+    left:50px;
+}
+.imgc input{
+    position: absolute;
+    top:260px;
+    left:47px;
+    background: #1eb319;
+   border:none;
+   color:white;
+   padding:15px 70px;
+   font-size:20px;
+   font-weight:bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media screen and (max-width:1110px){
+    .imgc h1{
+        display: none;
+    }
+    .imgc p{
+        display: none;
+    }
+    .imgc input{
+        top:330px;
+        left:10px;
+    }
+}
+.row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.imgs{
+    flex-basis:30%;
+    min-width:150px;
+    margin-bottom:30px;
+}
+.imgs img{
+    width:100%;
+}
+.smallcont{
+    max-width:1280px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+}
+.title{
+    font-size:45px;
+    text-align:left;
+    padding:30px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.boxer{
+    top:200px;
+    position: absolute;
+    color:green;
+}
+.box4{
+    margin-left:80px;
+    margin-right: 80px;
+}
+.boxes{
+    margin:0px;
+    display: flex;
+}
+.box{
+    padding: 5px;
+    text-align: center;
+    margin:7px;
+    width: 800px;
+    border:1px dashed;
+}
+.box input{
+    text-transform: uppercase;
+    background: none;
+    color:#de042e;
+    font-size:20px;
+    width:150px;
+    outline:none;
+    border: none;
+    padding:10px;
+
+}
+@media screen and (min-width:1150px){  
+.box{
+    padding: 5px;
+    text-align: center;
+    margin:7px;
+    width: 800px;
+    border:1px dashed;
+    position:relative;
+    height:260px;
+}
+.box input{
+    width:150px;
+    outline:none;
+    border: none;
+    background: none;
+    padding:10px;
+    position: absolute;
+    bottom:10px;
+    left:72px;
+}
+.box .cat{
+    margin-top:20px;
+}
+}
+.box h3,p{
+    font-family:sans-serif;
+    color: #2b4547;
+}
+.box p{
+    font-weight: lighter;
+}
+@media screen and (max-width:800px){
+    .box4{
+        margin-left:40px;
+        margin-right: 40px;
+    }
+    .boxes{
+        overflow:scroll;
+    }
+    .box .cat{
+        margin-top:20px;
+    }
+}
+.add{
+    background: #f1f4fd;
+    margin-top:70px;
+    padding-right:100px;
+    display:flex;
+    justify-content: space-around;
+}
+.adcont{
+    padding-top:90px;
+}
+.adcont h2{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.adcont .banner{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width:900px){
+    .adimg{
+        display: none;
+    }
+    .add{
+        border:1px dashed;
+        margin:20px;
+        padding:30px;
+    }
+    .adcont{
+        font-size:13px;
+        padding-top: 10px;
+    }
+    .adcont h2{
+        font-weight: lighter;
+    }
+}
+.allcont{
+    padding:30px;
+    text-align:justify ;
+    font-weight: lighter;
+}
+footer{
+    background: #212f3c;
+}
+@media screen and (min-width:700px){
+.comp{
+    display:flex;
+    padding-top:60px;
+   justify-content: space-around;
+}
+.comp h2{
+    color:#506071;
+    margin-left:40px;
+}
+.comp ul li{
+    padding:10px;
+    list-style:none;
+}
+.comp ul li a{
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+}
+.socmed ul{
+    display: flex;
+}
+.socmed ul li a{
+    font-size:35px;
+}
+.copy{
+    text-align:center;
+    background: #212f3c;
+    padding:17px;
+    font-weight: lighter;
+}
+.copy p{
+    color:#506071;
+}
+.copy p i:hover{
+    color: red;
+}
+}
+.comp{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top:60px;
+   justify-content: space-around;
+}
+.comp h2{
+    color:#506071;
+    margin-left:40px;
+}
+.comp ul li{
+    padding:10px;
+    list-style:none;
+}
+.comp ul li a{
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+}
+.socmed ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.socmed ul li a{
+    font-size:35px;
+}
+.copy{
+    text-align:center;
+    background: #212f3c;
+    padding:17px;
+    font-weight: lighter;
+}
+.copy p{
+    color:#506071;
+}
+.copy p i:hover{
+    color: red;
+}
